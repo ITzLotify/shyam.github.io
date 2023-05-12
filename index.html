@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a196237053.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Frontend Web Developer</p>
+            <h1>Hi,I'm <span>Shyam Kushwaha</span>  <br> from chandigarh University</h1>
+        </div>
+    </div>
+</div>  
+<!-- ------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pk.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>I m a first year student of chandigarh University who is currently pursuing Bachelors in computer application </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI</span><br>Designing Web/App interface (Begineer)</li>
+                        <li><span>Frontend Web Development</span><br>HTML ,  CSS , JS</li>
+                        <li><span>Languages</span><br>C,C++</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>No Experience Yet</span><br></li>
+                        <!-- <li><span>2019 - 2021</span><br>Team lead at startApp LLC</li>
+                        <li><span>2017 - 2019</span><br>Ui.ux design executive at coin digital ltd</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>School</span><br>Kharak Singh Khalsa</li>
+                        <li><span>College</span><br>Pursuing UnderGraduate at Chandigarh University </li>
+                        <!-- <li><span>2017 - 2019</span><br>Ui.ux design executive at coin digital ltd</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------services------------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p></p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p></p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p></p>
+                <!-- <a href="#">Learn more</a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------portfolio----- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/op.png">
+                <div class="layer">
+                    <h3>Portfolio</h3>
+                    <p>This portfolio is my First Project</p>
+                    <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/sp.png">
+                <div class="layer">
+                    <h3>Music App using Figma</h3>
+                    <p>MY first Figma Music App Design</p>
+                   
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/me.png">
+                <div class="layer">
+                    <h3>Ui App</h3>
+                    <p>Still Under Construction</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Website is under construction stay tuned!</a>
+    </div>
+</div>
+
+<!-- ---------------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i>shyamcharankushwaha29@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>9958384775</p>
+                  <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shyam-charan-6a7ab7256/"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                  
+                  <div class="social-icons">
+                    <a href="https://www.instagram.com/its_shyamkushwaha?utm_source=qr"><i class="fa-brands fa-square-instagram"></i></a>
+                  </div>
+                  
+                  
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="
+                    submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+             &#169;shivam Thakkar, all rights reserved
+        </p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbynhLLMbw5PV8Npz7mcTRbBBoROzAP0UNcuwxsw2gLotDu0bYZDkIBq1JvcqSf3P4f9wg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent Succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
